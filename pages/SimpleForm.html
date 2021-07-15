@@ -13,30 +13,30 @@
 
     <form action="">
         <header class="headerContainer">
-            <h1>HTML 5 From Input Fields</h1>
+            <h1>HTML 5 From Validation</h1>
         </header>
 
         <div class="form-field">
             <label for="name">Name :</label>
-            <input type="text" id="name" name="name" placeholder="Name" >
+            <input type="text" id="name" name="name" placeholder="Name" required>
             <error-output class="text-error" for="name"></error-output>
         </div>
 
         <div class="form-field">
             <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="Email" >
+            <input type="email" id="email" name="email" placeholder="Email" required>
             <error-output class="email-error" for="email"></error-output>
         </div>
 
         <div class="form-field">
             <label for="phone">Phone :</label>
-            <input type="tel" id="phone" name="phone" placeholder="Phone" >
+            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
             <error-output class="phone-error" for="phone"></error-output>
         </div>
 
         <div class="form-field">
             <label for="pwd">Password :</label>
-            <input type="password" id="pwd" name="pwd" placeholder="Password" >
+            <input type="password" id="pwd" name="pwd" placeholder="Password" required>
             <error-output class="pwd-error" for="pwd"></error-output>
         </div>
 

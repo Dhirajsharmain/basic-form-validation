@@ -1,3 +1,4 @@
+
 // name validation
 
 const text = document.querySelector("#name");
@@ -34,7 +35,7 @@ newEmail.addEventListener('input', function(){
     }
 });
 
-// email validation
+// phone number validation
 
 const newPhone = document.querySelector("#phone");
 const phoneError = document.querySelector('.phone-error');
@@ -48,6 +49,24 @@ newPhone.addEventListener('input', function(){
         }
         else {
             phoneError.textContent = "Phone Number is incorrect";
+        }
+    }
+});
+
+// Password validation
+
+const password = document.querySelector("#pwd");
+const passwordError = document.querySelector('.pwd-error');
+password.addEventListener('input', function(){
+    let passwordRegex = RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$');
+    if(password.value.length == 0 ){
+        passwordError.textContent = "Password is incorrect";
+    }else{
+        if (passwordRegex.test(password.value)){
+            passwordError.textContent = "";
+        }
+        else {
+            passwordError.textContent = "Password is incorrect";
         }
     }
 });
