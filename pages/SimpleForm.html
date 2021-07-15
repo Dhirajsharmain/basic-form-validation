@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Basic Form Validation</title>
+</head>
+
+<body>
+
+    <form action="">
+        <header class="headerContainer">
+            <h1>HTML 5 From Input Fields</h1>
+        </header>
+
+        <div class="form-field">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" placeholder="Name" >
+            <error-output class="text-error" for="name"></error-output>
+        </div>
+
+        <div class="form-field">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Email" >
+            <error-output class="email-error" for="email"></error-output>
+        </div>
+
+        <div class="form-field">
+            <label for="phone">Phone :</label>
+            <input type="number" id="phone" name="phone" placeholder="Phone" >
+            <error-output class="phone-error" for="phone"></error-output>
+        </div>
+
+        <div class="form-field">
+            <label for="pwd">Password :</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Password" >
+            <error-output class="pwd-error" for="pwd"></error-output>
+        </div>
+
+        <div class="submitBtn">
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <script src="../js/form.js"></script>
+</body>
+
+</html>
