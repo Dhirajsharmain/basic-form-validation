@@ -33,3 +33,21 @@ newEmail.addEventListener('input', function(){
         }
     }
 });
+
+// email validation
+
+const newPhone = document.querySelector("#phone");
+const phoneError = document.querySelector('.phone-error');
+newPhone.addEventListener('input', function(){
+    let phoneRegex = RegExp('^[9][1]+\\s\\d{10}$');
+    if(newPhone.value.length == 0 ){
+        phoneError.textContent = "Phone Number is incorrect";
+    }else{
+        if (phoneRegex.test(newPhone.value)){
+            phoneError.textContent = "";
+        }
+        else {
+            phoneError.textContent = "Phone Number is incorrect";
+        }
+    }
+});
